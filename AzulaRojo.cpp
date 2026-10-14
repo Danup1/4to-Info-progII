@@ -4,14 +4,14 @@ using namespace std;
 int main() {
      int N;
     do{
-        cout<<"ingresa numero para cantidad de filas"<<endl;
+        cout<<"ingresa numero de filas"<<endl; //aqui el usuario asignara una cantidad de filas
         cin>>N;
     }while (N<2);
     int matriz [N][2];
     int vector [N];
     for (int filas = 0; filas < N; filas++){
         for (int colum = 0; colum < N; colum++){
-            cout<<"ingresa un numero"<<endl;
+            cout<<"ingresa un numero"<<endl; //el usuario pondro los numeros que el quiera en la matriz
             cin>>matriz[filas][colum];
         }
     }
