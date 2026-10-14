@@ -6,7 +6,7 @@ int main() {
     do{
         cout<<"ingresa numero de filas"<<endl; //aqui el usuario asignara una cantidad de filas
         cin>>N;
-    }while (N<2);
+    }while (N<4);
     int matriz [N][2];
     int vector [N];
     for (int filas = 0; filas < N; filas++){
@@ -18,10 +18,10 @@ int main() {
     for (int i= i; i< N; i++){
         vector[N] = matriz[i][0]+ matriz[i][1];
     }   
-    if (N==2){
+    if (N<4){
         cout<<"pertenece al cuadrante CI"<<endl;
     }else{
-        if(N>2){
+        if(N>4){
             cout<< "no pertenece a la clasificacion"<<endl;
         }
     }
