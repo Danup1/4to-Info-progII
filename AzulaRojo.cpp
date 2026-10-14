@@ -28,3 +28,4 @@ int main() {
     
     return 0;
 }
+//Faltan los cuadrantes, pero esta muy bien amiga :)
