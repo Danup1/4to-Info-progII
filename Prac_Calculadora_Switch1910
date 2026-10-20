@@ -1,0 +1,62 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    float numero1;
+    float numero2;
+    float resultado;
+    char Sgno;
+
+    cout << "Ingrese el primer numero: "<<endl;
+    cin >> num1;
+
+    cout << "Ingrese el Signo (#, +, -, ^, /): ";
+    cin >> Signo;
+
+    if (Signo != '#') {
+        cout << "Ingrese el segundo numero: "<< endl;
+        cin >> numero2;
+    }
+
+    switch (Signo) {
+        case '#':
+            if (numero1 >= 0) {
+                resultado = sqrt(numero1);
+                cout << "Resultado: " << resultado;
+            } else {
+                cout << "No se puede calcular la raiz.";
+            }
+            break;
+
+        case '+':
+            resultado = numero1 + numero2;
+            cout << "Resultado: " << resultado<<endl;
+            break;
+
+        case '-':
+            resultado = numero1 - numero2;
+            cout << "Resultado: " << resultado<<endl;
+            break;
+
+        case '^':
+            resultado = pow(numero1, numero2);
+            cout << "Resultado: " << resultado<<endl;
+            break;
+
+        case '/':
+            if (numero2 != 0) {
+                resultado = numero1 / numero2;
+                cout << "Resultado: " << resultado<<endl;
+            } else {
+                cout << "Error: no se puede dividir por cero."<< endl;
+            }
+            break;
+
+        default:
+            cout << "Signo invalido."<<endl;
+            break;
+    }
+
+    return 0;
+}
